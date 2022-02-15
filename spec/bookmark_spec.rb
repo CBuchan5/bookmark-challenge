@@ -6,5 +6,10 @@ describe Bookmark do
       bookmarks = Bookmark.all
       expect(bookmarks).to include("http://www.google.com")
     end
+
+    it "reads the bookmarks from the database"
+      bookmarks = Bookmark.all
+      expect(bookmarks).to respond_to
+    end
   end
 end
